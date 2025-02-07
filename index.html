@@ -10,169 +10,308 @@
 
 <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.browser.min.js"></script>
 <script type="module" src = "main.js"></script> -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Flashcards</title>
-		<style>
-			.card-wrapper {
-              width: 25rem;
-              height: 200px;
-            }
-			.card-body {
-              position: relative;
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              transition: transform 0.6s;
-              transform-style: preserve-3d;
-              box-shadow: 0 15px 35px rgba(0,0,0,0.2),0 5px 15px rgba(0,0,0,0.19);
-			}
-			.card-front, .card-back {
-              background-color: #ffffff;
-      		  position: absolute;
-              width: 100%;
-              height: 100%;
-              backface-visibility: hidden;
-              -webkit-backface-visibility: hidden;
-			}
-			.card-front p, .card-back p {
-              position: relative;
-              top: 50%;
-              transform: translateY(-50%);
-              font-size: large;
-              margin: 0;
-			}
-			.card-back {
-              transform: rotateX(180deg);
-			}
-			.card-wrapper:hover .card-body {
-              transform: rotateX(180deg);
-			}
-		</style>
-	</head>
-	<body>
-
-		<div class="card-wrapper">
-			<div class="card-body">
-				<div class="card-front">
-					<p>Dannii Verweij</p>
-				</div>
-				<div class="card-back">
-					<p>Dannii Verweij, <br>
-                        Ik ben Dannii Verweij, ben geboren op 4 december 2003
-                    </p>
-				</div>
-			</div>
-		</div>
-     
-	</body>
-</html>
-
-<script type="module" src = "CSS"></script> -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Dannii Verweij </title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/logo.png">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 <body>
+  <div class="main">
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav-option" style="opacity: 1;">
+          <i class="fa-solid fa-house"></i><!-- Home -->
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass"></i><!-- search option -->
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <div class="library">
+        <div class="options">
+          <div class="lib-option nav-option ">
+            <i class="fa-solid fa-list"></i><!-- libarary -->
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus"></i> <!-- plus symbole -->
+            <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+          </div>
+        </div>
+        <div class="lib-box">
+          <div class="box"><!-- slidebar first box -->
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we'll help you</p>
+            <button class="badge">Create playlist</button>
+          </div>
+          <div class="box"><!-- slidebar second box -->
+            <p class="box-p1">Let's find some podcasts to follow</p>
+            <p class="box-p2">We'll keep you updated on new episodes</p>
+            <button class="badge">Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main contain started  -->
+    <div class="main-content">
+      <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+          <i class="fa-solid fa-angle-left"></i> <!-- left arrow -->
+          <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i> <!-- right arrow -->
+        </div>
+        <div class="sticky-nav-option">
+          <button class="badge nav-items hide">Explore Premium</button>
+          <button class="badge nav-items dark-badge"><i class="fa-regular fa-circle-down"
+              style="margin-right:5px;"></i>Install App</button>
+          <i class="fa-regular fa-user nav-items"></i> <!-- user icon  -->
+        </div>
+      </div>
+      <div class="header">
+                <h1>Good Morning!</h1>
+            </div>
+            <section class="upper-content">
+                <div class="box1">
+                    <img src="./assets/90s.jpeg" alt="Playlist 1">
+                    <p>90's Song</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/chill mix.jpeg" alt="Playlist 2">
+                    <p>Chill Mix</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/hothit.jpeg" alt="Recommended Albums">
+                    <p>Hot Hit</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div> -->
+      </section>
+            <section class="lower-content">
+                <div class="box1">
+                    <img src="./assets/krishna.jpeg" alt="Top Artists">
+                    <p>KR$NA</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/post_melon.jpeg" alt="New Releases">
+                    <p>Post Malone</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/shubh.jpeg" alt="Featured Podcasts">
+                    <p>Shubh</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+            </section>
 
-<h2>CSS Layout Float</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+      <br>
+      <h1>Weekly nerds </h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="./Photos/placeholder 2.jpg" alt="" class="card-img">
+          <p class="card-title">Week 1</p>
+          <p class="card-info">Kilian Valkhof <br>
+            Stop using JS for that moving feature, from JS to CSS & HTML</p>
+        </div>
+        <div class="card">
+          <img src="./Photos/placeholder 3.jpg" alt="" class="card-img">
+          <p class="card-title">Week 2</p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./Photos/placeholder 4.jpg" alt="" class="card-img">
+          <p class="card-title">Week 3</p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./Photos/placeholder 5.jpg" alt="" class="card-img">
+          <p class="card-title">Week 4</p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./assets/img4.jpg" alt="" class="card-img">
+          <p class="card-title">Week 5</p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./assets/img5.jpg" alt="" class="card-img">
+          <p class="card-title">Week 6</p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./assets/img6.jpg" alt="" class="card-img">
+          <p class="card-title">Week 7</p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./assets/img6.jpg" alt="" class="card-img">
+          <p class="card-title">Week 8 </p>
+          <p class="card-info"></p>
+        </div>
+      </div>
+      <h2>Recommended for today</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./assets/recomnded/img1.jpg" alt="" class="card-img">
+          <p class="card-title"></p>
+          <p class="card-info"> </p>
+        </div>
+        <div class="card">
+          <img src="./assets/recomnded/img2.jpg" alt="" class="card-img">
+          <p class="card-title"> </p>
+          <p class="card-info"> </p>
+        </div>
+        <div class="card">
+          <img src="./assets/recomnded/img3.jpg" alt="" class="card-img">
+          <p class="card-title"></p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./assets/recomnded/img4.jpg" alt="" class="card-img">
+          <p class="card-title"></p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./assets/recomnded/img5.jpg" alt="" class="card-img">
+          <p class="card-title"> </p>
+          <p class="card-info"> </p>
+        </div>
+        <div class="card">
+          <img src="./assets//recomnded/img6.jpg" alt="" class="card-img">
+          <p class="card-title"> </p>
+          <p class="card-info"></p>
+        </div>
+        <div class="card">
+          <img src="./assets/recomnded/img7.jpg" alt="" class="card-img">
+          <p class="card-title"> </p>
+          <p class="card-info"></p>
+        </div>
+        <br><br>
+      </div>
+      <h2>Eerdere projecten </h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./assets/recomnded1/img1.jpg" alt="" class="card-img">
+          <p class="card-title">Nerdy Gadgets</p>
+          <p class="card-info">Webshop voor Windesheim Flevoland</p>
+        </div>
+        <div class="card">
+          <img src="./assets//recomnded1/img2.jpg" alt="" class="card-img">
+          <p class="card-title">Auto evaluate</p>
+          <p class="card-info">Website die autos opzoekt doormiddel van API</p>
+        </div>
+        <div class="card">
+          <img src="./assets/recomnded1/img3.jpg" alt="" class="card-img">
+          <p class="card-title">Metafoor Prijzenboek</p>
+          <p class="card-info">Een prijzenboek die word gegenereerd door een Excel bestand </p>
+        </div>
+        <div class="card">
+          <img src="./assets/recomnded1/img4.jpg" alt="" class="card-img">
+          <p class="card-title">tbc</p>
+          <p class="card-info"></p>
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h2>Company</h2>
+          <ul>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>For the Record</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h2>Communities</h2>
+          <ul>
+            <li>For Artists</li>
+            <li>Developers</li>
+            <li>Advertising</li>
+            <li>Investors</li>
+            <li>Vendors</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>Support</li>
+            <li>Free Mobile App</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <div class="social-icons">
+            <i class="fa-brands fa-instagram "></i>
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-twitter "></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="line"></div>
+      </div>
+      <ul class="legal-list">
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Privacy Center</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">About Ads</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <p class="copyright">© 2023 Spotify AB</p>
+        <br><br>
+      </ul>
+      <br><br><br><br>
+    </div>
+  </div>
+  <div class="music-player">
+    <div class="album">
+      <img src="./assets/album.jpg" alt="Image Description" width="50" height="50">
+      <div class="name">
+        <p class="firstword">Dannii Verweij</p>
+        <span><img src="./assets/heart-line.png" alt="" class="heart"></span>
+        <p class="secondword">Web apps from scratch</p>
 
-<header>
-  <h2>Cities</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
-
-<footer>
-  <p>Footer</p>
-</footer>
-
+      </div>
+    </div>
+    <div class="player">
+      <div class="player-controls">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step "></i>
+        <i class="fa-regular fa-circle-play" style="font-size: 2rem; margin-top: -17px;"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
+      <div class="playback-bar">
+        <span class="curr-time">00:00</span>
+        <input type="range" min="0" max="100" class="progress-bar">
+        <span class="tot-time">03:17</span>
+      </div>
+    </div>
+    <div class="controls">
+      <img src="./assets/controls1.png" alt="" style="height: 20px; width: 20px;">
+      <img src="./assets/controls2.png" alt="" style="height: 20px; width: 20px;">
+      <img src="./assets/controls3.png" alt="" style="height: 20px; width: 20px;">
+      <img src="./assets/controls4.png" alt="" style="height: 20px; width: 20px;">
+      <img src="./assets/controls5.png" alt="" style="height: 20px; width: 20px;">
+      <input type="range" min="0" max="100" value="0" class="progress-bar1">
+      <img src="./assets/controls6.png" alt="" style="height: 20px; width: 20px;">
+    </div>
+  </div>
+  </div>
+  <!-- <script src="script.js"></script> -->
 </body>
-</html>
 
+</html>
