@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_Oefenen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b8ce91e0ee8a8f7bae39a1fe08087be1221753a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fcde862bb81d303d6c3df9da58950ac94356966")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_Oefenen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_Oefenen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
