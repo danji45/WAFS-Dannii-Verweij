@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,9 @@
 
 <body>
   <main class="main">
+
+    <!--sidebar waarin de feitjes staan  -->
+
     <aside class="sidebar">
       <nav class="nav">
         <a href="#" class="nav-option active">
@@ -31,45 +35,44 @@
       </nav>
 
       <section class="library">
+        <br>
         <header class="options">
           <a href="#" class="lib-option">
             <i class="fa-solid fa-list"></i>
             <span>Your Library</span>
           </a>
-          <div class="icons">
+          <nav class="icons">
             <i class="fa-solid fa-plus"></i>
             <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
-          </div>
+          </nav>
         </header>
 
+
+        <!-- lijst met doelen voor deze minor -->
         <section class="lib-box">
           <article class="box">
-            <p class="box-p1">Mijn doelen voor deze</p>
-            <p class="box-p2">It's easy, we'll help you</p>
+            <p class="box-p1">Mijn doelen voor deze minor</p>
+            <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
             <article class="box1">
               <img src="Photos/DanniiLucasLucas.png" alt="Playlist 1" edge="rounded">
-              <p>Ik doe veel special effect make-up</p>
+              <p>Weten hoe je een goede aantrekkelijke website kan maken.</p>
             </article>
             <article class="box1">
               <img src="Photos/DanniiKenzo.png" alt="Playlist 1" edge="rounded">
-              <p>Ik doe veel special effect make-up</p>
+              <p>Leren wat je eigenlijk allemaal met CSS kan doen.</p>
             </article>
             <article class="box1">
               <img src="Photos/MirrorSelfie.png" alt="Playlist 1" edge="rounded">
-              <p>Ik doe veel special effect make-up</p>
+              <p>sneller, en meer doel gericht programmeren.</p>
             </article>
-            <button class="badge">Create playlist</button>
-          </article>
-          <article class="box">
-            <p class="box-p1">Let's find some podcasts to follow</p>
-            <p class="box-p2">We'll keep you updated on new episodes</p>
-            <button class="badge">Browse podcasts</button>
+            <button class="badge">Maak meer doelen</button>
           </article>
         </section>
+        <br><br><br><br><br>
       </section>
     </aside>
 
-
+    <!-- header -->
     <section class="main-content">
       <header class="sticky-nav">
         <nav class="sticky-nav-icons">
@@ -85,7 +88,8 @@
         </section>
       </header>
       <!-- welkom tekst -->
-      <h1 class="header">Good Morning, Dannii Verweij!</h1>
+      <h1 id="greeting">Good Morning!</h1>
+
       <!-- fijtjes overmijzelf, meest beluisterd spotify. -->
       <section class="upper-content">
         <article class="box1">
@@ -93,58 +97,63 @@
           <p>Ik doe veel special effect make-up</p>
           <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
         </article>
-        
+
         <article class="box1">
           <img src="Photos/Rositas.png" alt="Playlist 2" edge="rounded">
-          <p>In vaak naar concerten.</p>
+          <p>Ik ga vaak naar concerten.</p>
           <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
         </article>
+
         <article class="box1">
           <img src="Photos/DanniiKevin.png" alt="Recommended Albums" edge="rounded">
           <p>Ik heb 7 jaar op karten gezeten.</p>
           <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
         </article>
+
         <article class="box1">
           <img src="Photos/Roze.png" alt="Recommended Albums" edge="rounded">
           <p>Ik heb een hond, een kat en een vogel.</p>
           <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
         </article>
+
         <article class="box1">
           <img src="Photos/DanniiStrandAchter.png" alt="Recommended Albums" edge="rounded">
           <p>Ik ben 21 jaar, en jarig op 4 december.</p>
           <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
         </article>
+
         <article class="box1">
           <img src="Photos/BabyFoto.png" alt="Recommended Albums" edge="rounded">
           <p>ik heb veel verschillende haar kleuren gehad.</p>
           <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
         </article>
-      </section>
-      <br><br<><br>
 
-      <!-- weekly nerds -->
-<h2>Weekly nerds</h2>
+      </section>
+      <br <!-- weekly nerds -->
+      <h2>*Weekly nerds*</h2>
 
       <section class="grid-container">
 
         <ul class="card-container">
 
-            <li class="card">
-              <img src="./Photos/DanniiAuto.png" alt="" class="card-img">
-              <p class="card-title">Week 1</p>
-              <p class="card-info">Kilian Valkhof <br>
-                Stop using JS for that moving feature, from JS to CSS & HTML</p>
-            </li>
-
-            <li class="card">
-              <h2>Achterkant</h2>
-              <p>Hier komt de inhoud van de achterkant</p>
+          <li class="card">
+            <img src="./Photos/DanniiAuto.png" alt="" class="card-img">
+            <p class="card-title">Week 1</p>
+            <p class="card-info">Kilian Valkhof <br>
+              Stop using JS for that moving feature, from JS to CSS & HTML</p>
           </li>
 
-            </ul>
+          <li class="card">
+            <h2>Week 1</h2>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
+              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
+              vivamus sagittis varius. </p>
+          </li>
+
+        </ul>
 
 
-          <ul class="card-container">
+        <ul class="card-container">
 
           <li class="card">
             <img src="./Photos/Hoorn.png" alt="" class="card-img">
@@ -154,14 +163,16 @@
           </li>
 
           <li class="card">
-            <h2>Achterkant</h2>
-            <p>Hier komt de inhoud van de achterkant</p>
-        </li>
+            <h2>Week 2</h2>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
+              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
+              vivamus sagittis varius. </p>
+          </li>
 
-          </ul>
+        </ul>
 
 
-          <ul class="card-container">
+        <ul class="card-container">
 
           <li class="card">
             <img src="./Photos/Boom.png" alt="" class="card-img">
@@ -171,13 +182,15 @@
           </li>
 
           <li class="card">
-            <h2>Achterkant</h2>
-            <p>Hier komt de inhoud van de achterkant</p>
-        </li>
+            <h2>Week 3</h2>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
+              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
+              vivamus sagittis varius. </p>
+          </li>
 
         </ul>
 
-          <ul class="card-container">
+        <ul class="card-container">
           <li class="card">
             <img src="./Photos/SkullMakeup.png" alt="" class="card-img">
             <p class="card-title">Week 4</p>
@@ -186,14 +199,16 @@
           </li>
 
           <li class="card">
-            <h2>Achterkant</h2>
-            <p>Hier komt de inhoud van de achterkant</p>
-        </li>
+            <h2>Week 4</h2>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
+              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
+              vivamus sagittis varius. </p>
+          </li>
 
         </ul>
 
 
-          <ul class="card-container">
+        <ul class="card-container">
 
           <li class="card">
             <img src="./Photos/TuinFoto.png" alt="" class="card-img">
@@ -203,9 +218,11 @@
           </li>
 
           <li class="card">
-            <h2>Achterkant</h2>
-            <p>Hier komt de inhoud van de achterkant</p>
-        </li>
+            <h2>Week 4</h2>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
+              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
+              vivamus sagittis varius. </p>
+          </li>
 
         </ul>
 
@@ -218,11 +235,11 @@
         <li><a href="#">Legal</a></li>
         <li><a href="#">Privacy Center</a></li>
         <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Cookies</a></li>
-        <li><a href="#">About Ads</a></li>
+        <il><a href="https://orteil.dashnet.org/cookieclicker/">Cookies</a></il>
+        <li><a href="https://tamaris.com/nl-NL/">About Ads</a></li>
         <li><a href="#">Accessibility</a></li>
         <p class="copyright">© 2023 Spotify AB</p>
-        <br><br>
+        <br><br><br><br><br><br>
       </ul>
     </section>
   </main>
@@ -230,10 +247,12 @@
   <section class="music-player">
     <ul class="music-player">
       <li class="album">
-        <img src="./assets/album.jpg" alt="Image Description" width="50" height="50">
+        <img id="avatar" alt="Image Description" width="50" height="50">
         <div class="name">
           <p class="firstword">Dannii Verweij</p>
-          <span><img src="./assets/heart-line.png" alt="" class="heart"></span>
+          <!-- <span>
+            <img src="" alt="  " class="heart">
+          </span> -->
           <p class="secondword">Web apps from scratch</p>
 
         </div>
@@ -253,16 +272,15 @@
         </div>
       </li>
       <li class="controls">
-        <img src="./assets/controls1.png" alt="" style="height: 20px; width: 20px;">
-        <img src="./assets/controls2.png" alt="" style="height: 20px; width: 20px;">
-        <img src="./assets/controls3.png" alt="" style="height: 20px; width: 20px;">
-        <img src="./assets/controls4.png" alt="" style="height: 20px; width: 20px;">
-        <img src="./assets/controls5.png" alt="" style="height: 20px; width: 20px;">
-        <input type="range" min="0" max="100" value="0" class="progress-bar1">
-        <img src="./assets/controls6.png" alt="" style="height: 20px; width: 20px;">
       </li>
     </ul>
   </section>
+
+  <script src="main.js" defer></script>
+
 </body>
 
 </html>
+
+<!-- credit youtube: Build a Spotify Clone Using HTML, CSS, and JavaScript | Music Player UI
+ heb dit gebruikt voor de algemene layout, maar heb er mijn eigen draai aan gegeven -->
