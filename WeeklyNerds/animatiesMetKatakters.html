@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player: Music for everyone</title>
+
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Je eigen stylesheets -->
+  <link rel="stylesheet" href="/css/weeklyNerds.css" />
+  <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="main">
+      <!-- Sidebar with navigation and library -->
+      <aside class="sidebar">
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <a href="#" class="nav-option active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </nav>
+  
+        <!-- Library Section -->
+        <section class="library">
+          <header class="options">
+            <a href="#" class="lib-option">
+              <i class="fa-solid fa-list"></i>
+              <span>Your Library</span>
+            </a>
+            <nav class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+            </nav>
+          </header>
+  
+          <!-- Goals for Minor -->
+          <section class="lib-box">
+            <article class="box">
+              <p class="box-p1">Mijn doelen voor deze minor</p>
+              <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiLucasLucas.png" alt="Doel 1" loading="lazy">
+                <p>Betrokken zijn met de stakeholders.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiKenzo.png" alt="Doel 2" loading="lazy">
+                <p>De design principles op de juiste manier toepassen.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/MirrorSelfie.png" alt="Doel 3" loading="lazy">
+                <p>Overbodige code verwijderen, en kijken of ik de code ook echt nodig heb.</p>
+              </article>
+              <button class="badge">Maak meer doelen</button>
+            </article>
+          </section>
+        </section>
+      </aside>
+  
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <!-- Sticky Navigation Header -->
+        <header class="sticky-nav">
+          <nav class="sticky-nav-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i>
+          </nav>
+          <section class="sticky-nav-option">
+            <button class="badge nav-items hide">Explore Premium</button>
+            <button class="badge nav-items dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right:5px;"></i>Install App
+            </button>
+            <i class="fa-regular fa-user nav-items"></i>
+          </section>
+        </header>
+
+        <h1>De magie van CSS volgens Julia Miocene</h1>
+
+        <p>Julia is product designer en pure CSS-animator, woonachtig in Amsterdam. Dat klinkt misschien abstract, maar haar werk is allesbehalve 
+          theoretisch. Ze laat letterlijk met CSS dingen bewegen, reageren en tot leven komen – en dat zonder ook maar één regel JavaScript. Voor 
+          ons voelde dat als goochelen. Maar wat Julia ons liet zien, was geen truc. Het was vakmanschap, en vooral: liefde voor het detail.</p>
+
+        <h2>“Wacht, dit is... gewoon CSS?”</h2>
+        <p>Dat was de zin die ik mezelf meerdere keren hoorde denken tijdens haar presentatie. Julia liet animaties zien die leken op v
+          ideospelletjes, geanimeerde landschappen, en zelfs zelfontworpen karakters met gezichtsuitdrukkingen. En alles – echt álles – was 
+          gebouwd met slechts HTML en CSS. Geen externe libraries, geen JavaScript. Alleen stijlen, posities en een heleboel creativiteit.</p>
+
+        <p>Wat me het meest raakte, was hoe ze haar werkwijze uitlegde. Want in plaats van abstracte begrippen te gebruiken, vertaalde Julia alles 
+          naar iets wat we al kenden. “Een lichaam is gewoon een div in een div in een div,” zei ze, “en ogen zijn ook gewoon divs, met pupillen 
+          als kleinere divs erin.”</p>
+
+        <h2>CSS als Lego</h2>
+        <p>Zo voelde het. Alsof ze met CSS kleine bouwstenen neerzette, net als met Lego. Je stapelt, positioneert en draait onderdelen tot het 
+          eruitziet als een karakter, een boom of een bewegende arm. Ze liet ons zien hoe ze met <code>position: absolute</code> elk onderdeel op 
+          precies de juiste plek zette, en hoe pseudo-elementen als <code>::before</code> en <code>::after</code> haar extra onderdelen gaven, 
+          zonder extra HTML nodig te hebben.</p>
+
+        <p>Een van de krachtigste technieken die ze uitlegde was <code>transform-origin</code>. Op dat moment herkende liet ze een mug zien, met 
+          een snuit die alle kanten op gingen. Door <code>transform-origin</code> te gebruiken, kon ze de snuit laten bewegen, maar er wel voor
+          zorgen dat het leek alsof hij echt aan de mug vastzat. Het was een simpele techniek, maar met een enorm effect.</p>
+
+        <h2>Leren van wat je al weet</h2>
+        <p>Wat Julia ons uiteindelijk meegaf, was niet alleen inspiratie maar ook vertrouwen. Haar boodschap was: je hoeft geen tovenaar te zijn. 
+          Je hoeft alleen opnieuw te kijken naar wat je al kent. Elke <code>div</code>, elke eigenschap in CSS, kan iets moois worden als je het 
+          slim inzet. Ze daagde ons uit om verder te denken dan we gewend zijn – en om onze creativiteit weer ruimte te geven.</p>
+
+        <p>Ik moet toegeven: ik heb het grootste deel van haar talk met open mond naar het scherm gekeken. Maar wat ik me nog het beste herinner, 
+          is dat Julia liet zien dat CSS niet alleen een middel is om een site netjes te maken. Het is een vorm van expressie. En als je eenmaal 
+          ziet wat er mogelijk is, wil je meteen zelf weer aan de slag.</p>
+
+        
+          <section class="codepen-wrapper">
+            <h2>Voorbeeld in actie</h2>
+            <p>Bekijk hieronder een embedded voorbeeld dat illustreert hoe eenvoudige technieken met minimale code kunnen worden toegepast:</p>
+            <div class="codepen-container">
+              <p class="codepen"
+                 data-height="600"
+                 data-theme-id="dark"
+                 data-default-tab="result"
+                 data-slug-hash="PoRbQJM"
+                 data-user="miocene">
+                Zie de Pen <a href="https://codepen.io/miocene/pen/PoRbQJM">
+                  Pure CSS Cartoon or Not?
+                </a> van Julia Miocene.
+              </p>
+            </div>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </section>
+
+        <h3>Reflectie</h3>
+        <p><em>Julia Miocene leerde me niet alleen nieuwe technieken, maar vooral om met andere ogen naar mijn eigen werk te kijken. CSS is niet s
+          aai of beperkend. Het is een speeltuin – als je maar weet hoe je moet spelen.</em></p>
+
+          
+
+    <section class="nav-links">
+      <a class="terug" href="/index.html">← Terug naar overzicht</a>
+    </section>
+</main>
+
+  <!-- Music Player -->
+  <section class="music-player">
+    <ul class="music-player">
+      <li class="album">
+        <img id="avatar" alt="User avatar" width="50" height="50">
+        <div class="name">
+          <p class="firstword">Dannii Verweij</p>
+          <p class="secondword">Web apps from scratch</p>
+        </div>
+      </li>
+      <li class="player">
+        <div class="player-controls">
+          <i class="fa-solid fa-shuffle" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward-step" aria-label="Previous"></i>
+          <i class="fa-regular fa-circle-play" aria-label="Play" style="font-size: 2rem; margin-top: -17px;"></i>
+          <i class="fa-solid fa-forward-step" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" aria-label="Repeat"></i>
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">02:10</span>
+          <input type="range" min="0" max="100" class="progress-bar" aria-label="Track progress">
+          <span class="tot-time">10:00</span>
+        </div>
+      </li>
+      <li class="controls"></li>
+    </ul>
+  </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="/script.js" defer></script>
+</body>
+</html>

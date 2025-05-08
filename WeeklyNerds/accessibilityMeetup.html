@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player: Music for everyone</title>
+
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Je eigen stylesheets -->
+  <link rel="stylesheet" href="/css/weeklyNerds.css" />
+  <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="main">
+      <!-- Sidebar with navigation and library -->
+      <aside class="sidebar">
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <a href="#" class="nav-option active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </nav>
+  
+        <!-- Library Section -->
+        <section class="library">
+          <header class="options">
+            <a href="#" class="lib-option">
+              <i class="fa-solid fa-list"></i>
+              <span>Your Library</span>
+            </a>
+            <nav class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+            </nav>
+          </header>
+  
+          <!-- Goals for Minor -->
+          <section class="lib-box">
+            <article class="box">
+              <p class="box-p1">Mijn doelen voor deze minor</p>
+              <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiLucasLucas.png" alt="Doel 1" loading="lazy">
+                <p>Betrokken zijn met de stakeholders.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiKenzo.png" alt="Doel 2" loading="lazy">
+                <p>De design principles op de juiste manier toepassen.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/MirrorSelfie.png" alt="Doel 3" loading="lazy">
+                <p>Overbodige code verwijderen, en kijken of ik de code ook echt nodig heb.</p>
+              </article>
+              <button class="badge">Maak meer doelen</button>
+            </article>
+          </section>
+        </section>
+      </aside>
+  
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <!-- Sticky Navigation Header -->
+        <header class="sticky-nav">
+          <nav class="sticky-nav-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i>
+          </nav>
+          <section class="sticky-nav-option">
+            <button class="badge nav-items hide">Explore Premium</button>
+            <button class="badge nav-items dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right:5px;"></i>Install App
+            </button>
+            <i class="fa-regular fa-user nav-items"></i>
+          </section>
+        </header>
+        
+        <h1>Toegankelijkheid begint bij aandacht</h1>
+        <p><em>Een persoonlijke terugblik op een lezing over digitale inclusie</em></p>
+      
+        <p>Toen ik de lezingzaal binnenstapte, wist ik nog niet precies wat ik kon verwachten. Toegankelijkheid had ik vaak gehoord in de context 
+          van liften en rolstoelingen, maar wat dat op internet betekent, bleef voor mij vaag. Die middag veranderde dat.</p>
+      
+        <p>Op het scherm stond de titel van de presentatie: <strong>"Practical Fixes for Common WCAG Failures"</strong>. Spreker Erik Kroes stond 
+          er al. Met rustige stem vertelde hij: “Ik ben zelf gehandicapt, en ik doe het toch.” Hij bedoelde: hij werkt, ontwerpt, en geeft 
+          lezingen. Dat kwam binnen. Toegankelijkheid bleek niet alleen een technische kwestie, maar vooral een menselijke.</p>
+      
+        <h2>Wat is toegankelijkheid?</h2>
+        <p>Erik legde uit dat een toegankelijke website bruikbaar is voor iedereen, ook voor mensen met een beperking. Dat klinkt logisch, maar in
+           de praktijk is het minder vanzelfsprekend. Hij gebruikte een simpel voorbeeld: stel je een gebouw voor zonder trap, maar met een gat in 
+           de muur. Technisch gezien kun je erin, maar prettig is het niet. Zo zijn veel websites ‘toegankelijk’ op papier, maar frustrerend in 
+           gebruik.</p>
+      
+        <p>Toegankelijkheid betekent dus niet per se dat een site prettig werkt — alleen dat hij bruikbaar is. En dat kan beter.</p>
+      
+        <h2>Van toetsenbord tot schermformaat</h2>
+        <p>Wat me bijbleef, was hoe eenvoudig het soms is om zelf te testen of een website toegankelijk is. Erik liet zien dat je met alleen de 
+          <strong>Tab-toets</strong> al veel kunt ontdekken. Als je op elke knop kunt komen en logisch door de pagina beweegt zonder muis, zit je 
+          op de goede weg. Maar vaak blijkt dat niet zo te zijn. Zelf testte ik die avond mijn eigen website. Tot mijn schrik kon ik het menu niet 
+          eens bereiken met het toetsenbord. Een wake-upcall.</p>
+      
+        <p>Ook vertelde hij over <strong>contrast</strong>. In het felle daglicht op je telefoon een website proberen te lezen — we kennen het 
+          allemaal. Als de tekst nauwelijks verschilt van de achtergrond, haak je af. Daarom moeten ontwerpers zorgen voor voldoende 
+          kleurcontrast. Het is geen esthetische keuze, maar een basisvoorwaarde voor leesbaarheid. De WCAG-richtlijnen 
+          (Web Content Accessibility Guidelines) geven daar zelfs cijfers voor: een verhouding van minimaal 4.5:1 voor gewone tekst.</p>
+      
+        <p>En dan was er nog het punt over <strong>sizing</strong>. Niet iedereen gebruikt een groot scherm. Sommige mensen bekijken websites op 
+          een mobiel met een breedte van slechts 320 pixels. Als je ontwerp daar niet op inspeelt, sluit je automatisch mensen uit. Erik liet zien
+           hoe je content op elk schermformaat consistent kunt houden, zonder iets weg te laten.</p>
+      
+        <h2>Nienke de Keijzer: van student tot veranderaar</h2>
+        <p>Een tweede spreker die indruk maakte was <strong>Nienke de Keijzer</strong>. Ze vertelde dat ze begonnen is op de opleiding 
+          Communication and Multimedia Design, net als veel van ons. Wat begon als een interesse in digitale vormgeving, groeide uit tot een baan 
+          bij het <strong>GVB</strong>, het openbaar vervoersbedrijf van Amsterdam.</p>
+      
+        <p>Bij het GVB werkt Nienke aan de digitale toegankelijkheid van de website. Ze zorgt ervoor dat reizigers — of ze nu slechtziend zijn, 
+          niet goed kunnen klikken of juist snel informatie nodig hebben — alles kunnen vinden en gebruiken. Denk aan alt-teksten voor 
+          schermlezers, logische structuren en begrijpelijke taal. Wat me raakte, was hoe concreet ze het maakte. Ze sprak niet over gebruikers 
+          in het algemeen, maar over mensen. Mensen die met haar hulp wél de tram kunnen pakken.</p>
+      
+        <h2>Mijn inzicht</h2>
+        <p>Wat ik meenam uit deze middag, is dat toegankelijkheid niet optioneel is. Het is geen extra stap of een bijlage achterin een 
+          projectplan. Het hoort bij de basis. Als we zeggen dat we ontwerpen voor gebruikers, dan bedoelen we <strong>àlle</strong> gebruikers. 
+          Niet alleen mensen zoals wijzelf.</p>
+      
+        <p>Toegankelijkheid gaat niet over perfect zijn. Het gaat over willen begrijpen, willen verbeteren en vooral: willen meedoen. Ik kijk 
+          sinds deze lezing anders naar mijn eigen ontwerpen. Niet alleen met het oog op wat er goed uitziet, maar ook: wie kan dit eigenlijk 
+          gebruiken?</p>
+      
+
+    <section class="nav-links">
+      <a class="terug" href="/index.html">← Terug naar overzicht</a>
+    </section>
+</main>
+
+  <!-- Music Player -->
+  <section class="music-player">
+    <ul class="music-player">
+      <li class="album">
+        <img id="avatar" alt="User avatar" width="50" height="50">
+        <div class="name">
+          <p class="firstword">Dannii Verweij</p>
+          <p class="secondword">Web apps from scratch</p>
+        </div>
+      </li>
+      <li class="player">
+        <div class="player-controls">
+          <i class="fa-solid fa-shuffle" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward-step" aria-label="Previous"></i>
+          <i class="fa-regular fa-circle-play" aria-label="Play" style="font-size: 2rem; margin-top: -17px;"></i>
+          <i class="fa-solid fa-forward-step" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" aria-label="Repeat"></i>
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">02:10</span>
+          <input type="range" min="0" max="100" class="progress-bar" aria-label="Track progress">
+          <span class="tot-time">10:00</span>
+        </div>
+      </li>
+      <li class="controls"></li>
+    </ul>
+  </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="/script.js" defer></script>
+</body>
+</html>

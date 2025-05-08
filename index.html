@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  
+  <!-- External Resources -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="icon" href="./assets/logo.png">
-  <title>Spotify - Web Player: Music for everyone</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  
+  <!-- Local Stylesheets -->
+  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/Index.css">
 </head>
 
 <body>
   <main class="main">
-
-    <!--sidebar waarin de feitjes staan  -->
-
+    <!-- Sidebar with navigation and library -->
     <aside class="sidebar">
+      <!-- Navigation Menu -->
       <nav class="nav">
         <a href="#" class="nav-option active">
           <i class="fa-solid fa-house"></i>
@@ -34,8 +33,8 @@
         </a>
       </nav>
 
+      <!-- Library Section -->
       <section class="library">
-        <br>
         <header class="options">
           <a href="#" class="lib-option">
             <i class="fa-solid fa-list"></i>
@@ -47,33 +46,32 @@
           </nav>
         </header>
 
-
-        <!-- lijst met doelen voor deze minor -->
+        <!-- Goals for Minor -->
         <section class="lib-box">
           <article class="box">
             <p class="box-p1">Mijn doelen voor deze minor</p>
             <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
             <article class="box1">
-              <img src="Photos/DanniiLucasLucas.png" alt="Playlist 1" edge="rounded">
-              <p>Weten hoe je een goede aantrekkelijke website kan maken.</p>
+              <img src="Photos/WAFSFotos/DanniiLucasLucas.png" alt="Doel 1" loading="lazy">
+              <p>Betrokken zijn met de stakeholders.</p>
             </article>
             <article class="box1">
-              <img src="Photos/DanniiKenzo.png" alt="Playlist 1" edge="rounded">
-              <p>Leren wat je eigenlijk allemaal met CSS kan doen.</p>
+              <img src="Photos/WAFSFotos/DanniiKenzo.png" alt="Doel 2" loading="lazy">
+              <p>De design principles op de juiste manier toepassen.</p>
             </article>
             <article class="box1">
-              <img src="Photos/MirrorSelfie.png" alt="Playlist 1" edge="rounded">
-              <p>sneller, en meer doel gericht programmeren.</p>
+              <img src="Photos/WAFSFotos/MirrorSelfie.png" alt="Doel 3" loading="lazy">
+              <p>Overbodige code verwijderen, en kijken of ik de code ook echt nodig heb.</p>
             </article>
             <button class="badge">Maak meer doelen</button>
           </article>
         </section>
-        <br><br><br><br><br>
       </section>
     </aside>
 
-    <!-- header -->
+    <!-- Main Content Section -->
     <section class="main-content">
+      <!-- Sticky Navigation Header -->
       <header class="sticky-nav">
         <nav class="sticky-nav-icons">
           <i class="fa-solid fa-angle-left"></i>
@@ -87,200 +85,283 @@
           <i class="fa-regular fa-user nav-items"></i>
         </section>
       </header>
-      <!-- welkom tekst -->
+      
+      <!-- Welcome Text -->
       <h1 id="greeting">Good Morning!</h1>
 
-      <!-- fijtjes overmijzelf, meest beluisterd spotify. -->
+      <!-- Facts Display Section -->
       <section class="upper-content">
         <article class="box1">
-          <img src="Photos/FotoDanniiBloemen.png" alt="Playlist 1" edge="rounded">
+          <img src="Photos/WAFSFotos/FotoDanniiBloemen.png" alt="Special effects makeup" loading="lazy">
           <p>Ik doe veel special effect make-up</p>
-          <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+          <i class="fa-sharp fa-solid fa-circle-play" aria-hidden="true"></i>
         </article>
 
         <article class="box1">
-          <img src="Photos/Rositas.png" alt="Playlist 2" edge="rounded">
+          <img src="Photos/WAFSFotos/Rositas.png" alt="Concerts" loading="lazy">
           <p>Ik ga vaak naar concerten.</p>
-          <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+          <i class="fa-sharp fa-solid fa-circle-play" aria-hidden="true"></i>
         </article>
 
         <article class="box1">
-          <img src="Photos/DanniiKevin.png" alt="Recommended Albums" edge="rounded">
+          <img src="Photos/WAFSFotos/DanniiKevin.png" alt="Karting" loading="lazy">
           <p>Ik heb 7 jaar op karten gezeten.</p>
-          <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+          <i class="fa-sharp fa-solid fa-circle-play" aria-hidden="true"></i>
         </article>
 
         <article class="box1">
-          <img src="Photos/Roze.png" alt="Recommended Albums" edge="rounded">
+          <img src="Photos/WAFSFotos/Roze.png" alt="Pets" loading="lazy">
           <p>Ik heb een hond, een kat en een vogel.</p>
-          <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+          <i class="fa-sharp fa-solid fa-circle-play" aria-hidden="true"></i>
         </article>
 
         <article class="box1">
-          <img src="Photos/DanniiStrandAchter.png" alt="Recommended Albums" edge="rounded">
+          <img src="Photos/WAFSFotos/DanniiStrandAchter.png" alt="Birthday" loading="lazy">
           <p>Ik ben 21 jaar, en jarig op 4 december.</p>
-          <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+          <i class="fa-sharp fa-solid fa-circle-play" aria-hidden="true"></i>
         </article>
 
         <article class="box1">
-          <img src="Photos/BabyFoto.png" alt="Recommended Albums" edge="rounded">
+          <img src="Photos/WAFSFotos/BabyFoto.png" alt="Hair colors" loading="lazy">
           <p>ik heb veel verschillende haar kleuren gehad.</p>
-          <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+          <i class="fa-sharp fa-solid fa-circle-play" aria-hidden="true"></i>
         </article>
-
       </section>
-      <br <!-- weekly nerds -->
+
+      <!-- Weekly Nerds Section -->
       <h2>*Weekly nerds*</h2>
 
-      <section class="grid-container">
+     <!-- Wrapping each card container with an anchor tag -->
+<section class="grid-container">
 
-        <ul class="card-container">
+  <!-- Rule of least power -->
+  <a href="WeeklyNerds/ruleOfLeastPower.html" class="card-link">
+    <ul class="card-container">
+      <li class="card">
+        <img src="./Photos/WAFSFotos/DanniiAuto.png" alt="Week 1 image" class="card-img" loading="lazy">
+        <p class="card-title">Rule of least power</p>
+        <p class="card-info">Kilian Valkhof <br>
+          Stop using JS for that moving feature, from JS to CSS & HTML</p>
+      </li>
+      <li class="card">
+        <h2>Rule of least power</h2>
+        <p>Tijdens dit hoorcollege leerde ik over een principe over de kracht van js en css gaat. Ontwikkelaar 
+          Kilian Valkhof liet ons zien dat je met verrassend weinig code vaak méér bereikt. Minder foutgevoelig, sneller, toegankelijker — 
+          en toch volledig functioneel.</p>
+      </li>
+    </ul>
+  </a>
 
-          <li class="card">
-            <img src="./Photos/DanniiAuto.png" alt="" class="card-img">
-            <p class="card-title">Week 1</p>
-            <p class="card-info">Kilian Valkhof <br>
-              Stop using JS for that moving feature, from JS to CSS & HTML</p>
-          </li>
+  <!-- Betalen voor het internet -->
+  <a href="WeeklyNerds/betalenVoorInternet.html" class="card-link">
+    <ul class="card-container">
+      <li class="card">
+        <img src="./Photos/WAFSFotos/Hoorn.png" alt="Week 2 image" class="card-img" loading="lazy">
+        <p class="card-title">Betalen voor het internet</p>
+        <p class="card-info"></p>
+      </li>
+      <li class="card">
+        <h2>Betalen voor het internet</h2>
+        <p>Tijdens een hoorcollege leerde ik over een onderwerp, dat Web Monetization heet. Dit houd in dat je per seconde een klein bedrag 
+          betaald voor het internet.
+          Het klinkt als een eerlijke oplossing, maar is dat het ook? In deze tekst vertel ik wat ik hoorde, waarom het me aan het denken zette, 
+          en waarom ik er toch mijn twijfels bij heb.</p>
+      </li>
+    </ul>
+  </a>
 
-          <li class="card">
-            <h2>Week 1</h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
-              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
-              vivamus sagittis varius. </p>
-          </li>
+  <!-- Typografie -->
+  <a href="WeeklyNerds/typografie.html" class="card-link">
+    <ul class="card-container">
+      <li class="card">
+        <img src="./Photos/WAFSFotos/Boom.png" alt="Week 3 image" class="card-img" loading="lazy">
+        <p class="card-title">Typografie</p>
+        <p class="card-info">Roel Nieskens</p>
+      </li>
+      <li class="card">
+        <h2>Typografie</h2>
+        <p>In dit hoorcollege ontdekte hoeveel invloed letters eigenlijk hebben. Niet alleen op hoe iets 
+          eruitziet, maar op hoe je het voelt. Van regelafstand tot schreef, alles draagt bij aan hoe je een website beleeft. In deze tekst neem 
+          ik je mee in wat ik leerde over de kracht van typografie, en waarom het veel meer is dan alleen “een mooi lettertype kiezen”.</p>
+      </li>
+    </ul>
+  </a>
 
-        </ul>
+  <!-- GSAP -->
+  <a href="WeeklyNerds/gsap.html" class="card-link">
+    <ul class="card-container">
+      <li class="card">
+        <img src="./Photos/WAFSFotos/SkullMakeup.png" alt="Week 4 image" class="card-img" loading="lazy">
+        <p class="card-title">GSAP</p>
+        <p class="card-info">Cassie Evans, GSAP more than tweens</p>
+      </li>
+      <li class="card">
+        <h2>GSAP</h2>
+        <p>Tot ik tijdens een hoorcollege kennismaakte met GSAP — de GreenSock Animation Platform. Zag ik dat je makkelijk animaties kan maken,
+           die meebewegen met je scrollgedrag. En dat alles met verrassend weinig code. 
+          In deze tekst vertel ik hoe GSAP mijn beeld van webanimaties veranderde, wat je ermee kunt maken en waarom het zoveel meer is 
+          dan ‘wat bewegende elementen’.
+        </p>
+      </li>
+    </ul>
+  </a>
+
+  <!-- Design for flexibility -->
+  <a href="WeeklyNerds/designForFlexibility.html" class="card-link">
+    <ul class="card-container">
+      <li class="card">
+        <img src="./Photos/WAFSFotos/TuinFoto.png" alt="Week 5 image" class="card-img" loading="lazy">
+        <p class="card-title">Design for flexibility</p>
+        <p class="card-info">Nils Binder</p>
+      </li>
+      <li class="card">
+        <h2>Design for flexibility</h2>
+        <p>Tijdens een hoorlezing vertelde frontend developer Nils Binder over zijn werk bij 9elements, en hoe hij techniek en 
+          creativiteit laat samensmelten. Zijn verhaal gaat niet alleen over flexibele layouts en moderne tools als Figma, maar vooral over 
+          samenwerken, kijken met aandacht en durven loslaten.  
+        </p>
+      </li>
+    </ul>
+  </a>
+
+    <!-- Imperative or declarative -->
+    <a href="WeeklyNerds/imperativeOrDeclarative.html" class="card-link">
+      <ul class="card-container">
+        <li class="card">
+          <img src="./Photos/WAFSFotos/AnnikaVivanne.jpg" alt="Week 5 image" class="card-img" loading="lazy">
+          <p class="card-title">Imperative or declarative</p>
+          <p class="card-info">Jeremy Keith</p>
+        </li>
+        <li class="card">
+          <h2>Imperative or declarative</h2>
+          <p>Jeremy Keith neemt je mee in een verrassende vergelijking tussen 
+            klassieke muziek en jazz. Imperatief of declaratief: het zegt iets over hoe we omgaan met controle en loslaten. In deze 
+            tekst ontdek je wat dat betekent voor HTML, CSS en JavaScript. Een frisse 
+            blik op webontwikkeling die aanzet tot nadenken én anders kijken.
+          </p>
+        </li>
+      </ul>
+    </a>
+
+      <!-- Animaties met karakter -->
+  <a href="WeeklyNerds/animatiesMetKatakters.html" class="card-link">
+    <ul class="card-container">
+      <li class="card">
+        <img src="./Photos/WAFSFotos/MetAapje.jpg" alt="Week 5 image" class="card-img" loading="lazy">
+        <p class="card-title">Animaties met karakter</p>
+        <p class="card-info">Julia Miocene</p>
+      </li>
+      <li class="card">
+        <h2>Animaties met karakter</h2>
+        <p>Wat als je met alleen CSS een karakter tot leven kunt brengen? Julia Miocene, liet precies dat zien tijdens haar lezing. Zonder JavaScript,alleen 
+          HTML en CSS. In deze tekst ontdek je hoe zij denkt, bouwt en vertelt. Laat je verrassen door een vernieuwende kijk op stijl en beweging.</p>
+      </li>
+    </ul>
+  </a>
+
+    <!-- Circuit bending -->
+    <a href="WeeklyNerds/hacker.html" class="card-link">
+      <ul class="card-container">
+        <li class="card">
+          <img src="./Photos/WAFSFotos/KinderFotoMama.jpg" alt="Week 5 image" class="card-img" loading="lazy">
+          <p class="card-title">Circuit bending</p>
+          <p class="card-info">Rosa</p>
+        </li>
+        <li class="card">
+          <h2>Circuit bending</h2>
+          <p>Tijdens een hoorcollege over creatief coderen en circuit bending vertelde Rosa Schuurman over spelen met technologie en loslaten van 
+            regels. Voor sommigen klinkt dat als vrijheid. In deze tekst lees je een eerlijke zoektocht naar 
+            betekenis, structuur en aansluiting in een wereld vol mogelijkheden. Een reflectie die laat zien dat niet elke inspiratiebron direct 
+            hoeft te passen.
+          </p>
+        </li>
+      </ul>
+    </a>
+
+      <!-- Project Fugu -->
+  <a href="WeeklyNerds/projectFugu.html" class="card-link">
+    <ul class="card-container">
+      <li class="card">
+        <img src="./Photos/WAFSFotos/EftelingMetL&C.jpg" alt="Week 5 image" class="card-img" loading="lazy">
+        <p class="card-title">Project Fugu</p>
+        <p class="card-info">Niels Leenheer</p>
+      </li>
+      <li class="card">
+        <h2>Project Fugu</h2>
+        <p>Wat als een kassasysteem geen programma op je computer is, maar gewoon draait in de browser? Tijdens een hoorcollege liet Niels 
+          Leenheer precies dat zien, en het veranderde mijn kijk op wat webtechnologie eigenlijk kan. In deze tekst ontdek je hoe de scheidslijn tussen web en 
+          desktop vervaagt, en wat dat betekent voor jou als toekomstige ICT’er.
+        </p>
+      </li>
+    </ul>
+  </a>
+
+    <!-- Accessibility meetup -->
+    <a href="WeeklyNerds/accessibilityMeetup.html" class="card-link">
+      <ul class="card-container">
+        <li class="card">
+          <img src="./Photos/WAFSFotos/MetOlivier.jpg" alt="Week 5 image" class="card-img" loading="lazy">
+          <p class="card-title">Accessibility meetup</p>
+          <p class="card-info">Nienke de Keijzer</p>
+        </li>
+        <li class="card">
+          <h2>Accessibility meetup</h2>
+          <p>Wat betekent digitale toegankelijkheid écht? Sprekers Erik Kroes en Nienke de Keijzer lieten zien dat het ontwerpen van toegankelijke 
+            websites draait om mensen en niet om regels. Hoe maak je digitale producten die écht voor iedereen werken? En waarom is dat geen 
+            extraatje, maar de kern van goed ontwerp?</p>
+        </li>
+      </ul>
+    </a>
+</section>
 
 
-        <ul class="card-container">
-
-          <li class="card">
-            <img src="./Photos/Hoorn.png" alt="" class="card-img">
-            <p class="card-title">Week 2</p>
-            <p class="card-info"><br>
-            </p>
-          </li>
-
-          <li class="card">
-            <h2>Week 2</h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
-              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
-              vivamus sagittis varius. </p>
-          </li>
-
-        </ul>
-
-
-        <ul class="card-container">
-
-          <li class="card">
-            <img src="./Photos/Boom.png" alt="" class="card-img">
-            <p class="card-title">Week 3</p>
-            <p class="card-info"><br>
-            </p>
-          </li>
-
-          <li class="card">
-            <h2>Week 3</h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
-              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
-              vivamus sagittis varius. </p>
-          </li>
-
-        </ul>
-
-        <ul class="card-container">
-          <li class="card">
-            <img src="./Photos/SkullMakeup.png" alt="" class="card-img">
-            <p class="card-title">Week 4</p>
-            <p class="card-info"><br>
-            </p>
-          </li>
-
-          <li class="card">
-            <h2>Week 4</h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
-              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
-              vivamus sagittis varius. </p>
-          </li>
-
-        </ul>
-
-
-        <ul class="card-container">
-
-          <li class="card">
-            <img src="./Photos/TuinFoto.png" alt="" class="card-img">
-            <p class="card-title">Week 5</p>
-            <p class="card-info"><br>
-            </p>
-          </li>
-
-          <li class="card">
-            <h2>Week 4</h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Eros elementum nisi fringilla platea eros aliquam ac
-              dui. Efficitur turpis tortor class consequat risus donec cursus sit. Parturient dictumst mi ultricies
-              vivamus sagittis varius. </p>
-          </li>
-
-        </ul>
-
-
-      </section>
+      <!-- Footer -->
       <section class="footer">
         <div class="line"></div>
       </section>
+      
+      <!-- Legal Links -->
       <ul class="legal-list">
         <li><a href="#">Legal</a></li>
         <li><a href="#">Privacy Center</a></li>
         <li><a href="#">Privacy Policy</a></li>
-        <il><a href="https://orteil.dashnet.org/cookieclicker/">Cookies</a></il>
+        <li><a href="https://orteil.dashnet.org/cookieclicker/">Cookies</a></li>
         <li><a href="https://tamaris.com/nl-NL/">About Ads</a></li>
         <li><a href="#">Accessibility</a></li>
         <p class="copyright">© 2023 Spotify AB</p>
-        <br><br><br><br><br><br>
       </ul>
     </section>
   </main>
 
+  <!-- Music Player -->
   <section class="music-player">
     <ul class="music-player">
       <li class="album">
-        <img id="avatar" alt="Image Description" width="50" height="50">
+        <img id="avatar" alt="User avatar" width="50" height="50">
         <div class="name">
           <p class="firstword">Dannii Verweij</p>
-          <!-- <span>
-            <img src="" alt="  " class="heart">
-          </span> -->
           <p class="secondword">Web apps from scratch</p>
-
         </div>
       </li>
       <li class="player">
         <div class="player-controls">
-          <i class="fa-solid fa-shuffle"></i>
-          <i class="fa-solid fa-backward-step "></i>
-          <i class="fa-regular fa-circle-play" style="font-size: 2rem; margin-top: -17px;"></i>
-          <i class="fa-solid fa-forward-step"></i>
-          <i class="fa-solid fa-repeat"></i>
+          <i class="fa-solid fa-shuffle" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward-step" aria-label="Previous"></i>
+          <i class="fa-regular fa-circle-play" aria-label="Play" style="font-size: 2rem; margin-top: -17px;"></i>
+          <i class="fa-solid fa-forward-step" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" aria-label="Repeat"></i>
         </div>
         <div class="playback-bar">
           <span class="curr-time">02:10</span>
-          <input type="range" min="0" max="100" class="progress-bar">
+          <input type="range" min="0" max="100" class="progress-bar" aria-label="Track progress">
           <span class="tot-time">10:00</span>
         </div>
       </li>
-      <li class="controls">
-      </li>
+      <li class="controls"></li>
     </ul>
   </section>
 
-  <script src="main.js" defer></script>
-
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
 </body>
-
 </html>
-
-<!-- credit youtube: Build a Spotify Clone Using HTML, CSS, and JavaScript | Music Player UI
- heb dit gebruikt voor de algemene layout, maar heb er mijn eigen draai aan gegeven -->

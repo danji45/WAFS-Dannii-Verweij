@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player: Music for everyone</title>
+
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Je eigen stylesheets -->
+  <link rel="stylesheet" href="/css/weeklyNerds.css" />
+  <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="main">
+      <!-- Sidebar with navigation and library -->
+      <aside class="sidebar">
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <a href="#" class="nav-option active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </nav>
+  
+        <!-- Library Section -->
+        <section class="library">
+          <header class="options">
+            <a href="#" class="lib-option">
+              <i class="fa-solid fa-list"></i>
+              <span>Your Library</span>
+            </a>
+            <nav class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+            </nav>
+          </header>
+  
+          <!-- Goals for Minor -->
+          <section class="lib-box">
+            <article class="box">
+              <p class="box-p1">Mijn doelen voor deze minor</p>
+              <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiLucasLucas.png" alt="Doel 1" loading="lazy">
+                <p>Betrokken zijn met de stakeholders.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiKenzo.png" alt="Doel 2" loading="lazy">
+                <p>De design principles op de juiste manier toepassen.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/MirrorSelfie.png" alt="Doel 3" loading="lazy">
+                <p>Overbodige code verwijderen, en kijken of ik de code ook echt nodig heb.</p>
+              </article>
+              <button class="badge">Maak meer doelen</button>
+            </article>
+          </section>
+        </section>
+      </aside>
+  
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <!-- Sticky Navigation Header -->
+        <header class="sticky-nav">
+          <nav class="sticky-nav-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i>
+          </nav>
+          <section class="sticky-nav-option">
+            <button class="badge nav-items hide">Explore Premium</button>
+            <button class="badge nav-items dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right:5px;"></i>Install App
+            </button>
+            <i class="fa-regular fa-user nav-items"></i>
+          </section>
+        </header>
+        <div class="container">
+          <h1>Jeremy Keith over Declaratief en Imperatief</h1>
+      
+          <p>Jeremy Keith vertelt ons dat muziek maken op verschillende manieren kan – en die manieren, zegt hij, lijken opvallend veel op hoe we programmeren. In de klassieke muziek wordt elk detail genoteerd: welke toon, hoe die gespeeld moet worden, en hoelang. Jazz daarentegen laat ruimte open; er is misschien een akkoord, een toonsoort, en verder is het aan de muzikant.</p>
+      
+          <p>Dat klinkt nogal bekend voor wie met code werkt. Want ook in programmeren zie je twee stromingen terug: <strong>imperative</strong> en <strong>declarative</strong>. Als je programmeert op een imperatieve manier, schrijf je alles stap voor stap uit – een beetje zoals klassieke muziek. Maar bij declaratief programmeren geef je alleen aan wat je wilt bereiken, en laat je de details aan de browser of de taal zelf over – net als in jazz.</p>
+      
+          <p>Een goed voorbeeld van declaratief programmeren is SQL. Jij zegt wat je wilt, de computer bedenkt zelf hoe dat moet.</p>
+      
+          <h2>Declaratief vs Imperatief op het web</h2>
+          <p>HTML en CSS zijn beide declaratieve talen. In HTML geef je betekenis aan elementen – zoals <code>&lt;div&gt;</code> of <code>&lt;button&gt;</code> – en met CSS geef je stijl. Hoewel CSS soms als imperatief voelt, omdat je dingen 'instelt', blijft het een voorstel aan de browser – die uiteindelijk beslist.</p>
+      
+          <p>JavaScript is dan weer overduidelijk imperatief. Je vertelt de browser exact wat te doen, in welke volgorde. Jeremy wijst erop dat een declaratieve taal fouten gewoon negeert. Maar in JavaScript? Eén fout en je script stopt ermee. Het is dus krachtiger, maar ook gevoeliger.</p>
+      
+          <h2>Mindset en voorbeeldcode</h2>
+          <p>Met imperative code krijg je als ontwikkelaar veel controle, maar je moet ook zelf de fouten opvangen. Een simpele tikfout kan alles stilleggen. Declaratief denken betekent die controle een beetje loslaten. Bijvoorbeeld: gebruik gewoon de <code>&lt;button&gt;</code> in HTML in plaats van een <code>&lt;div&gt;</code> met JavaScript-functionaliteit.</p>
+      
+          <p>CSS versterkt dat idee, zeker met eenheden als <code>rem</code> en <code>vw</code>. Die geven flexibiliteit. Maar pas op: <code>vw</code> is blind voor gebruikersinstellingen. Jeremy stelt voor om het slim te combineren, bijvoorbeeld:</p>
+      
+          <pre><code>.example {
+        padding-inline-start: 1rem;
+        font-size: clamp(1rem, 0.5rem + 0.666vw, 1.5rem);
+      }</code></pre>
+      
+          <p>Zo hou je de controle over responsiviteit én toegankelijkheid.</p>
+      
+          <h2>Verder kijken</h2>
+          <ul>
+            <li><strong>Utopia.fyi:</strong> Laat zien hoe typografie automatisch schaalt tussen twee uitersten.</li>
+            <li><strong>Layout Land:</strong> Intrinsiek webdesign op een declaratieve manier.</li>
+            <li><strong>Every Layout:</strong> Laat je als ontwerper de grenzen bepalen, niet de inhoud.</li>
+            <li><strong>Build Excellent Websites:</strong> Wees mentor van de browser, niet de baas.</li>
+          </ul>
+      
+          <p>Betekent dit dat declaratief altijd beter is? Niet per se. Jeremy stelt: “It depends.” En dan vraagt hij ook meteen: “It depends on WHAT?” Zijn antwoord: op de cultuur, op de context. Hoe strikt is de omgeving, hoe open zijn de regels?</p>
+      
+          <h2>Designsystemen en cultuur</h2>
+          <p>Designsystemen zijn een soort gids voor hoe “wij dingen doen hier.” Ze tonen twee manieren van denken: analytisch (alles opdelen) en systemisch (het grote geheel bekijken). En hoewel je denkt dat systemen altijd het overzicht bieden, gaan ze vaak juist heel diep in op details.</p>
+      
+          <p>Bijvoorbeeld kleurgebruik: sommige systemen zijn strak ("gebruik deze exacte kleur"), andere geven ruimte ("zorg dat de rand iets lichter is dan de achtergrond"). En op het web? Daar verandert alles voortdurend. Zoals Jeremy zegt:</p>
+      
+          <blockquote>The more you tighten your grip, the more the world wide web slips through your fingers.</blockquote>
+      
+          <h2>Conclusie</h2>
+          <p>Het web dwingt ons om controle los te laten. Het is geen dictaat naar de gebruiker, maar een gesprek met hem of haar. Misschien is het tijd om wat losser te laten en te kijken wat er dan gebeurt. We zouden zomaar in een tijdperk terecht kunnen komen waarin flexibiliteit belangrijker is dan zekerheid. Maar goed – dat zal de tijd leren.</p>
+        </div>
+    <section class="nav-links">
+      <a class="terug" href="/index.html">← Terug naar overzicht</a>
+    </section>
+</main>
+
+  <!-- Music Player -->
+  <section class="music-player">
+    <ul class="music-player">
+      <li class="album">
+        <img id="avatar" alt="User avatar" width="50" height="50">
+        <div class="name">
+          <p class="firstword">Dannii Verweij</p>
+          <p class="secondword">Web apps from scratch</p>
+        </div>
+      </li>
+      <li class="player">
+        <div class="player-controls">
+          <i class="fa-solid fa-shuffle" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward-step" aria-label="Previous"></i>
+          <i class="fa-regular fa-circle-play" aria-label="Play" style="font-size: 2rem; margin-top: -17px;"></i>
+          <i class="fa-solid fa-forward-step" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" aria-label="Repeat"></i>
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">02:10</span>
+          <input type="range" min="0" max="100" class="progress-bar" aria-label="Track progress">
+          <span class="tot-time">10:00</span>
+        </div>
+      </li>
+      <li class="controls"></li>
+    </ul>
+  </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="/script.js" defer></script>
+</body>
+</html>

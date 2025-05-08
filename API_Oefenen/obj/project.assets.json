@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danni\\AppData\\Local\\Temp\\e2ac53fb-92b7-4976-a638-3a610312a609_Comaker_Prijzenboek-main.zip.609\\Comaker_Prijzenboek-main\\API_Oefenen\\API_Oefenen\\API_Oefenen.csproj",
+      "projectUniqueName": "C:\\Users\\danni\\Documents\\GitHub\\WAFS-Dannii-Verweij\\API_Oefenen\\API_Oefenen.csproj",
       "projectName": "API_Oefenen",
-      "projectPath": "C:\\Users\\danni\\AppData\\Local\\Temp\\e2ac53fb-92b7-4976-a638-3a610312a609_Comaker_Prijzenboek-main.zip.609\\Comaker_Prijzenboek-main\\API_Oefenen\\API_Oefenen\\API_Oefenen.csproj",
+      "projectPath": "C:\\Users\\danni\\Documents\\GitHub\\WAFS-Dannii-Verweij\\API_Oefenen\\API_Oefenen.csproj",
       "packagesPath": "C:\\Users\\danni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danni\\AppData\\Local\\Temp\\e2ac53fb-92b7-4976-a638-3a610312a609_Comaker_Prijzenboek-main.zip.609\\Comaker_Prijzenboek-main\\API_Oefenen\\API_Oefenen\\obj\\",
+      "outputPath": "C:\\Users\\danni\\Documents\\GitHub\\WAFS-Dannii-Verweij\\API_Oefenen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danni\\AppData\\Roaming\\NuGet\\NuGet.Config",

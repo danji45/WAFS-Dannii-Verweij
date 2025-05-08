@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player: Music for everyone</title>
+
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Je eigen stylesheets -->
+  <link rel="stylesheet" href="/css/weeklyNerds.css" />
+  <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="main">
+      <!-- Sidebar with navigation and library -->
+      <aside class="sidebar">
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <a href="#" class="nav-option active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </nav>
+  
+        <!-- Library Section -->
+        <section class="library">
+          <header class="options">
+            <a href="#" class="lib-option">
+              <i class="fa-solid fa-list"></i>
+              <span>Your Library</span>
+            </a>
+            <nav class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+            </nav>
+          </header>
+  
+          <!-- Goals for Minor -->
+          <section class="lib-box">
+            <article class="box">
+              <p class="box-p1">Mijn doelen voor deze minor</p>
+              <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiLucasLucas.png" alt="Doel 1" loading="lazy">
+                <p>Betrokken zijn met de stakeholders.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiKenzo.png" alt="Doel 2" loading="lazy">
+                <p>De design principles op de juiste manier toepassen.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/MirrorSelfie.png" alt="Doel 3" loading="lazy">
+                <p>Overbodige code verwijderen, en kijken of ik de code ook echt nodig heb.</p>
+              </article>
+              <button class="badge">Maak meer doelen</button>
+            </article>
+          </section>
+        </section>
+      </aside>
+  
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <!-- Sticky Navigation Header -->
+        <header class="sticky-nav">
+          <nav class="sticky-nav-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i>
+          </nav>
+          <section class="sticky-nav-option">
+            <button class="badge nav-items hide">Explore Premium</button>
+            <button class="badge nav-items dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right:5px;"></i>Install App
+            </button>
+            <i class="fa-regular fa-user nav-items"></i>
+          </section>
+        </header>
+        
+    <section>
+        <h1>GSAP: krachtige animaties op een makkelijke manier</h1>
+
+        <p>
+          Tijdens een hoorcollege over webanimaties werd voor het eerst de naam <strong>GSAP</strong> genoemd – de GreenSock Animation Platform. 
+          Tot dat moment dacht ik bij animaties vooral aan simpele CSS-overgangen: een knop die van kleur verandert als je eroverheen hovert, of 
+          een afbeelding die een beetje schuift. Prima, dacht ik altijd. Maar toen de docent live liet zien wat er allemaal mogelijk is met GSAP, 
+          ging er een wereld voor me open.
+        </p>
+      
+        <p>
+          GSAP is een JavaScript-bibliotheek die speciaal gemaakt is om animaties te bouwen – en niet zomaar animaties. Alles wat je ermee maakt 
+          beweegt vloeiend en voelt professioneel aan. Waar CSS stopt, gaat GSAP verder. Denk aan het bewegen van blokken, het laten verdwijnen 
+          van tekst, of zelfs het reageren op scrollen op een manier die precies klopt met wat je op je scherm ziet.
+        </p>
+      
+        <p>
+          Wat me meteen opviel tijdens het college, was hoe makkelijk het is om iets te maken dat er ingewikkeld uitziet. Je hoeft geen grafisch 
+          ontwerper te zijn of jarenlange ervaring met JavaScript te hebben. Met één regel code kun je bijvoorbeeld een blokje 100 pixels naar 
+          rechts laten schuiven in 1,5 seconde:
+        </p>
+      
+        <pre><code>gsap.to("#element", {
+        x: 100,
+        duration: 1.5,
+        opacity: 0.5,
+        ease: "power2.out"
+      });</code></pre>
+      
+        <p>
+          Zie het als een afstandsbediening voor je website. Je vertelt precies wat een element moet doen: waar het heen moet, hoe lang dat duurt 
+          en hoe het moet aanvoelen (zacht, snel, vertraagd…). Die 'ease' is net als het verschil tussen iemand die abrupt stopt met rennen en 
+          iemand die rustig uitloopt.
+        </p>
+      
+        <p>
+          Wat mij persoonlijk het meest raakte, was hoe goed GSAP omgaat met complexiteit. Tijdens het hoorcollege liet de docent een animatie 
+          zien waarbij verschillende elementen op elkaar reageerden: eerst verscheen er een tekst, daarna schoof een blok omhoog en vervolgens 
+          zoomde een afbeelding langzaam in. Dat leek haast een mini-animatiefilm – maar achter de schermen gebeurde alles op basis van een 
+          zogeheten <strong>tijdlijn</strong>. Daarmee kun je precies bepalen wat er wanneer gebeurt, en zelfs overlappen als dat nodig is.
+        </p>
+      
+        <p>
+          GSAP werkt ook uitstekend samen met <strong>ScrollTrigger</strong>, een plugin die animaties laat starten wanneer je scrollt. Stel je 
+          voor: je scrolt naar een nieuw stuk tekst, en terwijl je leest komt de inhoud rustig tevoorschijn, alsof de pagina met je meebeweegt. 
+          Dat is precies wat ScrollTrigger doet. Het voelt intuïtief en zorgt ervoor dat je aandacht op het juiste moment op de juiste plek zit.
+        </p>
+      
+        <p>
+          Wat me overtuigde om zelf met GSAP aan de slag te gaan, was het gemak waarmee alles werkte, zelfs in verschillende browsers. Of je nou 
+          in Chrome werkt of Firefox, GSAP zorgt ervoor dat je animatie er overal hetzelfde uitziet. En dat maakt het ideaal voor websites die 
+          professioneel over moeten komen.
+        </p>
+
+        <section class="codepen-wrapper">
+          <h2>Voorbeeld in actie</h2>
+          <p>Bekijk hieronder een embedded voorbeeld dat illustreert hoe eenvoudige technieken met minimale code kunnen worden toegepast:</p>
+          <div class="codepen-container">
+            <p class="codepen"
+               data-height="600"
+               data-theme-id="dark"
+               data-default-tab="result"
+               data-slug-hash="RNNxeJz"
+               data-user="dannii-verweij"
+               style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; margin: 1em 0; padding: 1em;">
+              <span>Bekijk de <a href="https://codepen.io/dannii-verweij/pen/RNNxeJz">CodePen van dannii-verweij</a>.</span>
+            </p>
+          </div>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+      
+        <h2>Kort overzicht: waarom GSAP?</h2>
+      
+        <table>
+          <thead>
+            <tr>
+              <th>Eigenschap</th>
+              <th>CSS</th>
+              <th>GSAP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Meerdere animaties</td>
+              <td>Lastig te timen</td>
+              <td>Heel eenvoudig te combineren</td>
+            </tr>
+            <tr>
+              <td>JavaScript-integratie</td>
+              <td>Beperkt</td>
+              <td>Perfect afgestemd</td>
+            </tr>
+            <tr>
+              <td>SVG & canvas animaties</td>
+              <td>Niet altijd top</td>
+              <td>Zeer goed ondersteund</td>
+            </tr>
+            <tr>
+              <td>Easing-opties</td>
+              <td>Beperkt</td>
+              <td>Zeer uitgebreid</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h2>Tot slot</h2>
+
+        <p>
+          GSAP is meer dan alleen een hulpmiddel voor animaties. Het is een manier om je ideeën visueel kracht bij te zetten. Of je nu een product 
+          wil laten opvallen, informatie aantrekkelijker wil presenteren, of simpelweg wil dat je site professioneel aanvoelt: met GSAP heb je iets
+           in handen dat werkt. En dat – dat is iets wat ik iedereen zou aanraden om eens te proberen.
+        </p>
+
+    <section class="nav-links">
+      <a class="terug" href="/index.html">← Terug naar overzicht</a>
+    </section>
+</main>
+
+  <!-- Music Player -->
+  <section class="music-player">
+    <ul class="music-player">
+      <li class="album">
+        <img id="avatar" alt="User avatar" width="50" height="50">
+        <div class="name">
+          <p class="firstword">Dannii Verweij</p>
+          <p class="secondword">Web apps from scratch</p>
+        </div>
+      </li>
+      <li class="player">
+        <div class="player-controls">
+          <i class="fa-solid fa-shuffle" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward-step" aria-label="Previous"></i>
+          <i class="fa-regular fa-circle-play" aria-label="Play" style="font-size: 2rem; margin-top: -17px;"></i>
+          <i class="fa-solid fa-forward-step" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" aria-label="Repeat"></i>
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">02:10</span>
+          <input type="range" min="0" max="100" class="progress-bar" aria-label="Track progress">
+          <span class="tot-time">10:00</span>
+        </div>
+      </li>
+      <li class="controls"></li>
+    </ul>
+  </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="/script.js" defer></script>
+</body>
+</html>

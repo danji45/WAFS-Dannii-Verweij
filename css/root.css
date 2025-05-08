@@ -1,0 +1,41 @@
+/**
+ * Spotify Clone - CSS Custom Properties
+ * Global color variables and theme settings
+ */
+
+ :root {
+    /* Color palette using OKLCH for better color rendering */
+    --color-zwart: oklch(0% 0 0);
+    --color-wit: oklch(100% 0 0);
+    --color-grijs: oklch(18.22% 0 0);
+    --color-licht-grijs: oklch(25.62% 0 0);
+    --color-lichter-grijs: oklch(39.04% 0 0);
+    --color-doorzichtig-wit: oklch(100% 0 0 / 20%);
+    --color-off-white: oklch(89.75% 0 0);
+    --color-neon-groen: oklch(76.35% 0.2561 142.12);
+    
+    /* Typography */
+    --font-family-primary: 'Montserrat', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;  /* 4px */
+    --spacing-sm: 0.5rem;   /* 8px */
+    --spacing-md: 0.75rem;  /* 12px */
+    --spacing-base: 1rem;   /* 16px */
+    --spacing-lg: 1.5rem;   /* 24px */
+    --spacing-xl: 2rem;     /* 32px */
+    
+    /* Border radius */
+    --border-radius-sm: 0.25rem;  /* 4px */
+    --border-radius-md: 0.5rem;   /* 8px */
+    --border-radius-lg: 0.75rem;  /* 12px */
+    --border-radius-xl: 1rem;     /* 16px */
+    --border-radius-full: 100px;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.6s ease;
+  }
+  
+  

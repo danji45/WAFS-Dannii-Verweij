@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player: Music for everyone</title>
+
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Je eigen stylesheets -->
+  <link rel="stylesheet" href="/css/weeklyNerds.css" />
+  <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="main">
+      <!-- Sidebar with navigation and library -->
+      <aside class="sidebar">
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <a href="#" class="nav-option active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </nav>
+  
+        <!-- Library Section -->
+        <section class="library">
+          <header class="options">
+            <a href="#" class="lib-option">
+              <i class="fa-solid fa-list"></i>
+              <span>Your Library</span>
+            </a>
+            <nav class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+            </nav>
+          </header>
+  
+          <!-- Goals for Minor -->
+          <section class="lib-box">
+            <article class="box">
+              <p class="box-p1">Mijn doelen voor deze minor</p>
+              <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiLucasLucas.png" alt="Doel 1" loading="lazy">
+                <p>Betrokken zijn met de stakeholders.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiKenzo.png" alt="Doel 2" loading="lazy">
+                <p>De design principles op de juiste manier toepassen.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/MirrorSelfie.png" alt="Doel 3" loading="lazy">
+                <p>Overbodige code verwijderen, en kijken of ik de code ook echt nodig heb.</p>
+              </article>
+              <button class="badge">Maak meer doelen</button>
+            </article>
+          </section>
+        </section>
+      </aside>
+  
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <!-- Sticky Navigation Header -->
+        <header class="sticky-nav">
+          <nav class="sticky-nav-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i>
+          </nav>
+          <section class="sticky-nav-option">
+            <button class="badge nav-items hide">Explore Premium</button>
+            <button class="badge nav-items dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right:5px;"></i>Install App
+            </button>
+            <i class="fa-regular fa-user nav-items"></i>
+          </section>
+        </header>
+        
+        <h1>The Rule of Least Power in Webontwikkeling</h1>
+
+        <p>Vorige week woonde ik een hoorcollege bij van Kilian Valkhof, een Nederlandse ontwikkelaar die vooral bekend staat om 
+          <em>Polypane</em> — een browser speciaal voor webontwikkelaars. Het is een krachtig hulpmiddel waarmee je websites in meerdere '
+          schermformaten tegelijk kunt testen. Wat me direct opviel: Kilian is iemand die niet alleen technisch denkt, maar ook filosofisch. 
+          Zijn verhaal ging namelijk niet over hoeveel je kunt met techniek, maar juist over hoeveel je níét zou moeten doen. Hij vertelde ons 
+          over een principe dat me is bijgebleven: <strong>The Rule of Least Power</strong>.</p>
+    
+        <h2>Wat houdt dat in?</h2>
+        <p>Volgens dit principe kies je bij het bouwen van een website altijd de minst krachtige technologie die je nodig hebt. Dus eerst kijken: 
+          kan het met HTML? Dan hoef je geen CSS. Is CSS toch nodig? Prima. Maar pas als het echt niet anders kan, gebruik je JavaScript. De 
+          reden? Hoe krachtiger de technologie, hoe groter de kans op fouten, tragere laadtijden en ingewikkelder onderhoud.</p>
+    
+        <blockquote>“JavaScript is verleidelijk, maar gevaarlijk — je kunt er té veel mee doen.”</blockquote>
+    
+        <p>Denk aan JavaScript als een sportwagen: indrukwekkend, maar je moet wel weten wat je doet. HTML daarentegen is de fiets: eenvoudig, 
+          betrouwbaar, en voor bijna iedereen toegankelijk.</p>
+    
+        <h2>Wat dit concreet betekent</h2>
+        <p>Hij gaf ons een aantal inspirerende voorbeelden waarbij HTML en CSS verrassend ver konden komen:</p>
+        <ul>
+            <li><strong>Toggles en switches:</strong> Met alleen een checkbox en wat CSS maak je al een schakelaar.</li>
+            <li><strong>Datalists:</strong> HTML’s <code>&lt;datalist&gt;</code> biedt slimme suggesties bij het typen.</li>
+            <li><strong>Donkere modus:</strong> Met <code>prefers-color-scheme</code> in CSS stem je de site automatisch af op het systeemthema.
+            </li>
+            <li><strong>Accordeons en FAQ’s:</strong> Met <code>&lt;details&gt;</code> en <code>&lt;summary&gt;</code> kun je uitklapbare secties 
+              maken zonder JavaScript.</li>
+        </ul>
+    
+        <h2>Reflectie: wat het met me deed</h2>
+        <p>Na het college heb ik nagedacht over mijn eigen werk. Hoe vaak gebruik ik JavaScript terwijl het ook met HTML en CSS kan? En hoe vaak 
+          kies ik voor de makkelijkste oplossing, terwijl ik weet dat het niet de beste is? Ik realiseerde me dat ik vaak 
+          de krachtigste technologie kies, terwijl dat niet altijd nodig is.</p>
+
+            <section class="codepen-wrapper">
+              <h2>Voorbeeld in actie</h2>
+              <p>Bekijk hieronder een embedded voorbeeld dat illustreert hoe eenvoudige technieken met minimale code kunnen worden toegepast:</p>
+              <div class="codepen-container">
+                <p class="codepen"
+                  data-height="600"
+                  data-theme-id="dark"
+                  data-default-tab="result"
+                  data-slug-hash="PwwQgjE"
+                  data-user="dannii-verweij">
+                </p>
+              </div>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </section>
+    
+        <h2>De toekomst van eenvoud</h2>
+        <p>Kilian liet zien hoe moderne browsers steeds meer mogelijkheden toevoegen aan CSS. Van container queries en de <code>:has()</code>-
+          selector tot elementen als <code>&lt;dialog&gt;</code> en <code>&lt;selectlist&gt;</code> — het web wordt krachtiger zonder dat het 
+          complexer hoeft te worden.</p>
+    
+        <p>Het web is dus volop in beweging, maar niet per se in de richting van méér complexiteit. Integendeel: we krijgen steeds meer tools om 
+          met minder middelen meer te bereiken. Dat vraagt van ons als ontwikkelaars misschien wel iets heel moeilijks: durven loslaten. Durven 
+          kiezen voor eenvoud.</p>
+    
+        <h2>Tot slot</h2>
+        <p>Wat ik meeneem uit dit hoorcollege is dat ik bewuster wil omgaan met de keuzes die ik maak in mijn code. Niet alleen omdat het 
+          technisch ‘beter’ is, maar omdat ik wil bouwen aan websites die toegankelijk, onderhoudbaar en toekomstbestendig zijn. En het mooie is: 
+          dat begint bij iets eenvoudigs. Soms is HTML al genoeg.</p>
+    </body>
+
+
+    
+        <section>
+          <h2>Waarom zou je het toepassen?</h2>
+          <ul>
+            <li><strong>Betere prestaties:</strong> Minder scripts betekent snellere laadtijden.</li>
+            <li><strong>Minder foutgevoelig:</strong> Eenvoudige oplossingen zijn vaak robuuster en veiliger.</li>
+            <li><strong>Toegankelijkheid:</strong> Declaratieve code wordt beter begrepen door zoekmachines en screenreaders.</li>
+            <li><strong>Onderhoudsgemak:</strong> CSS en HTML zijn eenvoudiger te lezen en aan te passen dan complexe JavaScript-logica.</li>
+          </ul>
+        </section>
+    
+        
+      
+
+    <section>
+      <h2>Eigen notities / Opmerkingen</h2>
+      <p>Persoonlijke aantekeningen, inzichten of vragen over de stof.</p>
+    </section>
+
+    <section class="nav-links">
+      <a class="terug" href="/index.html">← Terug naar overzicht</a>
+    </section>
+</main>
+
+  <!-- Music Player -->
+  <section class="music-player">
+    <ul class="music-player">
+      <li class="album">
+        <img id="avatar" alt="User avatar" width="50" height="50">
+        <div class="name">
+          <p class="firstword">Dannii Verweij</p>
+          <p class="secondword">Web apps from scratch</p>
+        </div>
+      </li>
+      <li class="player">
+        <div class="player-controls">
+          <i class="fa-solid fa-shuffle" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward-step" aria-label="Previous"></i>
+          <i class="fa-regular fa-circle-play" aria-label="Play" style="font-size: 2rem; margin-top: -17px;"></i>
+          <i class="fa-solid fa-forward-step" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" aria-label="Repeat"></i>
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">02:10</span>
+          <input type="range" min="0" max="100" class="progress-bar" aria-label="Track progress">
+          <span class="tot-time">10:00</span>
+        </div>
+      </li>
+      <li class="controls"></li>
+    </ul>
+  </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player: Music for everyone</title>
+
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Je eigen stylesheets -->
+  <link rel="stylesheet" href="/css/weeklyNerds.css" />
+  <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="main">
+      <!-- Sidebar with navigation and library -->
+      <aside class="sidebar">
+        <!-- Navigation Menu -->
+        <nav class="nav">
+          <a href="#" class="nav-option active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </nav>
+  
+        <!-- Library Section -->
+        <section class="library">
+          <header class="options">
+            <a href="#" class="lib-option">
+              <i class="fa-solid fa-list"></i>
+              <span>Your Library</span>
+            </a>
+            <nav class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+            </nav>
+          </header>
+  
+          <!-- Goals for Minor -->
+          <section class="lib-box">
+            <article class="box">
+              <p class="box-p1">Mijn doelen voor deze minor</p>
+              <p class="box-p2">je hebt tot de zomervakantie de tijd!</p>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiLucasLucas.png" alt="Doel 1" loading="lazy">
+                <p>Betrokken zijn met de stakeholders.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/DanniiKenzo.png" alt="Doel 2" loading="lazy">
+                <p>De design principles op de juiste manier toepassen.</p>
+              </article>
+              <article class="box1">
+                <img src="/Photos/WAFSFotos/MirrorSelfie.png" alt="Doel 3" loading="lazy">
+                <p>Overbodige code verwijderen, en kijken of ik de code ook echt nodig heb.</p>
+              </article>
+              <button class="badge">Maak meer doelen</button>
+            </article>
+          </section>
+        </section>
+      </aside>
+  
+      <!-- Main Content Section -->
+      <section class="main-content">
+        <!-- Sticky Navigation Header -->
+        <header class="sticky-nav">
+          <nav class="sticky-nav-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i>
+          </nav>
+          <section class="sticky-nav-option">
+            <button class="badge nav-items hide">Explore Premium</button>
+            <button class="badge nav-items dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right:5px;"></i>Install App
+            </button>
+            <i class="fa-regular fa-user nav-items"></i>
+          </section>
+        </header>
+        
+        <main class="wrapper">
+          <header>
+            <h1>Design for flexibility</h1>
+          </header>
+          <p>De wereld van webdesign verandert snel. Soms lijkt het alsof er elke maand een nieuwe manier is om iets te bouwen of vorm te geven. 
+            Toch zijn er mensen die je bijblijven omdat ze verder kijken dan alleen de techniek. Tijdens een hoorlezing maakte ik kennis met zo 
+            iemand: Nils Binder, frontend developer bij het Duitse bedrijf 9elements. Zijn verhaal liet me niet alleen anders kijken naar CSS, 
+            maar ook naar de samenwerking tussen vormgeving en ontwikkeling.</p>
+
+          <h2>Van origami tot code</h2>
+          <p>Wat me meteen opviel aan Nils, was zijn passie. Niet alleen voor code, maar ook voor vorm. Hij vertelde hoe hij zich laat inspireren 
+            door origami – de Japanse vouwkunst – en hoe die manier van denken hem helpt bij het bouwen van flexibele layouts. Origami draait om 
+            precisie, structuur en vorm in beweging. Net als moderne CSS.</p>
+        
+          <h2>Werken bij 9elements</h2>
+          <p>Nils werkt in een team binnen 9elements, een bureau met verschillende creatieve en technische afdelingen. Zo is er een unit voor 
+            communicatieontwerp, waar men werkt aan visuele identiteiten zoals logo’s en posters. Daarnaast zijn er tientallen ontwikkelaars die 
+            slimme software bouwen. Wat ik mooi vond, is hoe klein en groot naast elkaar bestaan: Nils’ team maakt websites voor allerlei klanten 
+            – van een lokale ijssalon tot grote, internationale merken.</p>
+          <p>Die afwisseling sprak me aan. Het laat zien dat goed design niet afhankelijk is van grootte of budget, maar van aandacht en 
+            samenwerking. En dat laatste is iets wat Nils benadrukte: bij 9elements werken de teams niet los van elkaar, maar juist mét elkaar – 
+            zelfs met de cybersecurity-afdeling worden ideeën uitgewisseld.</p>
+        
+          <h2>CSS: minder vast, meer vloeiend</h2>
+          <p>Een van de interessantste stukken van zijn verhaal ging over CSS, de opmaaktaal van websites. Vroeger werkten veel ontwikkelaars met 
+            vaste maten. Dan zei je bijvoorbeeld: "deze pagina moet precies 1200 pixels breed zijn". Maar dat werkt niet goed meer. We gebruiken 
+            nu zoveel verschillende apparaten – telefoons, tablets, grote schermen – dat een website flexibel moet kunnen meebewegen.</p>
+          <p>Nils liet een voorbeeld zien van hoe we dat nu doen. In plaats van vaste breedtes gebruiken we functies zoals <code>min()</code> en 
+            <code>max()</code>. Dat klinkt technisch, maar het is eigenlijk heel logisch: je zegt bijvoorbeeld tegen de browser "maak de pagina zo 
+            breed als kan, maar niet breder dan 75 tekens, en houd altijd minstens een beetje ruimte aan de zijkant".</p>
+          <p>Een beetje zoals wanneer je een tafel dekt voor eters: je houdt rekening met de grootte van de tafel, maar ook met hoe je de borden 
+            en glazen verdeelt. Je past je aan aan de situatie, zonder dat het rommelig wordt.</p>
+        
+          <h2>Van Photoshop naar Figma</h2>
+          <p>Ook het ontwerpproces zelf is veranderd. Vroeger gebruikten veel ontwerpers programma’s zoals Photoshop, die vooral bedoeld zijn voor 
+            drukwerk. Tegenwoordig werken ze met tools als Figma, die beter aansluiten op hoe het web werkt. Wat ik mooi vond aan zijn uitleg, is 
+            hoe ontwerp en code steeds dichter bij elkaar komen. Neem bijvoorbeeld een slagschaduw (drop-shadow): in Figma stel je dezelfde 
+            eigenschappen in als in CSS – zoals de afstand, kleur en doorzichtigheid. Dat maakt het makkelijker om samen te werken.</p>
+        
+          <h2>Witruimte is niet leeg, maar waardevol</h2>
+          <p>Een uitspraak van Nils die me echt is bijgebleven, ging over witruimte. Vaak denken mensen dat lege ruimte op een website zonde is – 
+            "kun je daar niet iets inzetten?" Maar juist die ruimte zorgt voor overzicht en rust. Hij liet voorbeelden zien van websites waar de 
+            tekst prettig leest dankzij goed gekozen marges en kolommen. Sindsdien let ik daar zelf veel meer op. Ook in mijn eigen ontwerpen 
+            probeer ik nu bewust ruimte in te bouwen, in plaats van alles te vullen.</p>
+        
+          <h2>Reflectie: techniek met gevoel</h2>
+          <p>Wat ik vooral meeneem uit deze hoorlezing is dat webontwikkeling niet puur technisch is. Het is ook een kwestie van gevoel, van 
+            kijken, van durven loslaten. Nils combineert zijn precisie als developer met een open blik en creatief denken. Hij liet zien dat code 
+            niet in beton gegoten hoeft te zijn – het mag flexibel zijn, meebewegend, net als het web zelf.</p>
+          <p>Zijn verhaal maakte me nieuwsgierig naar hoe ik in mijn eigen projecten meer kan samenwerken met ontwerpers. Niet alleen om dingen 
+            mooier te maken, maar om websites te bouwen die écht werken voor mensen. En dat begint, zoals Nils liet zien, met het durven omarmen 
+            van verandering.</p>
+        
+
+    <section class="nav-links">
+      <a class="terug" href="/index.html">← Terug naar overzicht</a>
+    </section>
+</main>
+
+  <!-- Music Player -->
+  <section class="music-player">
+    <ul class="music-player">
+      <li class="album">
+        <img id="avatar" alt="User avatar" width="50" height="50">
+        <div class="name">
+          <p class="firstword">Dannii Verweij</p>
+          <p class="secondword">Web apps from scratch</p>
+        </div>
+      </li>
+      <li class="player">
+        <div class="player-controls">
+          <i class="fa-solid fa-shuffle" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward-step" aria-label="Previous"></i>
+          <i class="fa-regular fa-circle-play" aria-label="Play" style="font-size: 2rem; margin-top: -17px;"></i>
+          <i class="fa-solid fa-forward-step" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" aria-label="Repeat"></i>
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">02:10</span>
+          <input type="range" min="0" max="100" class="progress-bar" aria-label="Track progress">
+          <span class="tot-time">10:00</span>
+        </div>
+      </li>
+      <li class="controls"></li>
+    </ul>
+  </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="/script.js" defer></script>
+</body>
+</html>
